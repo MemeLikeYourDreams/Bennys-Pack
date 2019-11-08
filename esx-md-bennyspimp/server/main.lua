@@ -10,7 +10,7 @@ AddEventHandler('esx_lscustom:buyMod', function(price)
 
 	if Config.IsMecanoJobOnly == true then
 		local societyAccount = nil
-		TriggerEvent('esx_addonaccount:getSharedAccount', 'society_mecano', function(account)
+		TriggerEvent('esx_addonaccount:getSharedAccount', 'society_bennys', function(account)
 			societyAccount = account
 		end)
 		if price < societyAccount.money then
